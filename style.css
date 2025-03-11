@@ -1,13 +1,10 @@
 nav{
 	padding: 10px 0;
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	background-color: #7e685a;
 }
 .logga img{
 	width: 70px;
-	margin: 10px;
 	height: 70px;
 }
 .logga{
@@ -16,11 +13,12 @@ nav{
 nav ul li {
 	display: inline-flex;
 	list-style: none;
+	margin: 0 10vh;
 }
 nav {
-	display: flex;
-	width: 100%;
+	padding: 10px;
 	margin: 0;
+	width: 100%;
 }
 .nav{
 	width: 90%;
@@ -40,12 +38,17 @@ nav {
 	font-weight: bold;
 	font-size: 20px;
 }
+/* standarder för alla hemsidor */
 .hello{
-	width: 100%;
-	background-color: #e7717d;
+	min-width: 100%;
+	background-color: #f0a8af;
 	min-height: 100vh;
+	overflow-x: hidden;
+	box-sizing: border-box;
+
 }
-.contenthome{
+/*grid system för alla sidor delade på 3 */
+.content3{
 	display: grid;
 	grid-template-columns: auto auto auto;
 }
@@ -62,5 +65,37 @@ nav {
 }
 body{
 	overflow-x: hidden;
+	margin: 0;
 	font-family: "Montserrat";
+}
+.content2{
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding: 20px;
+}
+.text{
+	padding: 0 10px;
+}
+.img img{
+	width: 100%;
+}
+/* Grid system för alla sidor delade på 2 */
+.content2 a{
+	text-decoration: none;
+	color: #000;
+}
+.span{
+	grid-column: span 2;
+}
+.box{
+	margin: 20px 20%;
+	background-color: #afd275;
+	padding: 20px;
+}
+.rows{
+	grid-row: span 2;
+}
+.end{
+	background-color: #c2cad0;
+	padding: 20px;
 }
