@@ -50,15 +50,16 @@ nav {
 /*grid system för alla sidor delade på 3 */
 .content3{
 	display: grid;
-	grid-template-columns: auto auto auto;
+	grid-template-columns: 33% 34% 33%;
 }
 .accent{
 	background-color: #afd275;
 	padding: 10px;
 	align-items: center;
+	grid-column: 1;
 }
 .yt{
-	grid-column: 2;
+
 }
 .grid{
 	padding: 10px;
@@ -96,6 +97,13 @@ body{
 	grid-row: span 2;
 }
 .end{
-	background-color: #c2cad0;
+	background-color: #c5cdd3;
 	padding: 20px;
+	margin: 10px 0;
+}
+.art{
+	margin: auto;
+}
+.span3{
+	grid-column: span 3;
 }
