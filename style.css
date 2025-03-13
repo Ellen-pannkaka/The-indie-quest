@@ -107,3 +107,32 @@ body{
 .span3{
 	grid-column: span 3;
 }
+.side{
+	display: grid;
+	grid-template-columns: 20% 80%;
+}
+.navigation{
+	padding: 10px;
+	position: fixed;
+	max-width: 15%;
+}
+.navigation a{
+	color: #fff;
+	text-decoration: none;
+	margin: 10px 0;
+}
+.navigation a:hover{
+	color: #000;
+}
+.title{
+	font-weight: bold;
+	font-size: 20px;
+}
+.sider{
+	grid-row: span 2;
+	background-color: #7e685a;
+}
+.navigation ul li{
+	list-style: none;
+	padding: 5px 0;
+}
