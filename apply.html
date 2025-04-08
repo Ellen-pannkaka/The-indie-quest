@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="wclassth=device-wclassth, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<title>Find Us </title>
+</head>
+<body>
+	<div class="hello">
+		<nav>
+			<div class="logga">
+				<a href="#"> <img src="logo.png" alt="Logo"> </a>
+			</div>
+			<!-- Navigation till alla sidor, nästan samma på alla sidor -->
+			<div class="nav">
+				<ul>
+					<li> <a href="index.html" class="link"> Home</a> </li>
+					<!-- Here används för att visa vilken sida användaren är på -->
+					<li> <a href="about.html" class="link"> About</a> </li>
+					<li> <a href="curriculum.html" class="link"> Curriculum</a> </li>
+					<li> <a href="findus.html" class="link"> Find us</a> </li>
+					<li> <a href="apply.html" class="here"> Apply</a> </li>
+				</ul>
+			</div>
+		</nav>
+		<div class="box">
+			<form class="grid">
+				<label> Personnummer (ÅÅÅÅMMDD-XXXX)*</label>
+				<input type="text" name="persnr" minlength="12" maxlength="13">
+				<br>
+				<label> Förnamn*</label>
+				<input type="text" name="fname" required>
+				<br>
+				<label> Efternamn*</label>
+				<input type="text" name="lname" required>
+				<br>
+				<label> c/o</label>
+				<input type="text" name="c/o">
+				<br>
+				<label> Adress*</label>
+				<input type="text" name="adress" required>
+				<br>
+				<label> Postnummer*</label>
+				<input type="text" name="postnr" required size="5">
+				<br>
+				<label> Ort*</label>
+				<input type="text" name="ort" required>
+				<br>
+				<label> Telefon</label>
+				<input type="tel" name="telefon">
+				<br>
+				<label> E-post</label>
+				<input type="email" name="epost">
+				<br>
+				<label>Hur vill du bli kontaktad?*</label>
+				<label style="margin-right: 0;">Telefon</label>
+				<input type="radio" name="kontaktad" required>
+				<label style="margin-right: 0;">E-post</label>
+				<input type="radio" name="kontaktad" required>
+				<label class="right"> SMS</label>
+				<input type="radio" name="kontaktad" required>
+				<br>
+				<label for="medbo"> Medborgarskap*</label>
+				<label>Svensk</label>
+				<input type="radio" name="medbo" id="medbo" required>
+				<label>Annat, ange land</label>
+				<input type="text" name="medbo" id="medbo" required>
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+
+	</div>
+</body>
+</html>
