@@ -4,11 +4,10 @@ nav{
 	background-color: #7e685a;
 }
 .logga img{
-	width: 70px;
-	height: 70px;
+	width: 100%;
 }
 .logga{
-	width: 10%;
+	width: 20%;
 }
 nav ul li {
 	display: inline-flex;
@@ -20,6 +19,7 @@ nav {
 	margin: 0;
 	width: 100%;
 }
+/* Navigation meny for all websites */
 .nav{
 	width: 90%;
 	display: flex;
@@ -32,6 +32,7 @@ nav {
 	font-weight: bold;
 	font-size: 20px;
 }
+/* Different style for current website */
 .here{
 	text-decoration: none;
 	color: #000; 
@@ -52,6 +53,7 @@ nav {
 	display: grid;
 	grid-template-columns: 33% 34% 33%;
 }
+/* Different color in one square */
 .accent{
 	background-color: #afd275;
 	padding: 10px;
@@ -66,6 +68,7 @@ body{
 	margin: 0;
 	font-family: "Montserrat";
 }
+/* grid system för alla sidor delade på 2 */
 .content2{
 	display: grid;
 	grid-template-columns: 50% 50%;
@@ -76,8 +79,8 @@ body{
 }
 .img img{
 	width: 100%;
+	padding: 10px 0;
 }
-/* Grid system för alla sidor delade på 2 */
 .content2 a{
 	text-decoration: none;
 	color: #000;
@@ -85,6 +88,7 @@ body{
 .span{
 	grid-column: span 2;
 }
+/* shows box with different color around certain elements */
 .box{
 	margin: 20px 20%;
 	background-color: #afd275;
@@ -93,6 +97,7 @@ body{
 .rows{
 	grid-row: span 2;
 }
+/* box with different color */
 .end{
 	background-color: #c5cdd3;
 	padding: 20px;
@@ -104,6 +109,7 @@ body{
 .span3{
 	grid-column: span 3;
 }
+/* navigation meny for curriculum site */
 .side{
 	display: grid;
 	grid-template-columns: 20% 80%;
@@ -155,4 +161,74 @@ body{
 }
 .grid input{
 	margin: 5px;
+}
+.overlay{
+	display: none;
+}
+@media screen and (max-width: 600px){
+	.content3{
+		grid-template-columns: 100%;
+	}
+	.span3{
+		grid-column: span 1;
+	}
+	.span{
+		grid-column: span 1;
+	}
+	.navigation{
+		display: none;
+	}
+	.side{
+		grid-template-columns: 100%;
+	}
+	.content2{
+		grid-template-columns: 100%;
+	}
+	.box{
+		margin: 10px 5%;
+	}
+	.rows{
+		grid-row: span 1;
+	}
+	.sider{
+		grid-column: span 1;
+	}
+	.art{
+		margin: 5px 5%;
+	}
+	.end{
+		margin: 10px;
+	}
+	.findus{
+		grid-column: span 1;
+		display: block;
+	}
+	.nav{
+		display: none;
+	}
+	.overlay{
+		overflow: hidden;
+  		display: inline-flex;
+  		width: 90%;
+	}
+	.overlay img{
+		width: 20%;
+		margin-left: 75%;
+		margin-top: auto;
+	}
+	.overlay #overlaycontent{
+		display: none;
+		position: absolute;
+		right: 0;
+		background-color: #7e685a;
+	}
+	.overlay a{
+		display: block;
+		text-decoration: none;
+		color: #fff; 
+		font-weight: bold;
+		font-size: 20px;
+		background-color: #7e685a;
+		padding: 5px;
+	}
 }
