@@ -7,12 +7,11 @@ nav{
 	width: 100%;
 }
 .logga{
-	width: 20%;
+	width: 5%;
 }
 nav ul li {
 	display: inline-flex;
 	list-style: none;
-	margin: 0 8vh;
 }
 nav {
 	padding: 10px;
@@ -22,9 +21,15 @@ nav {
 /* Navigation meny for all websites */
 .nav{
 	width: 90%;
+}
+.nav ul{
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+}
+.logga #fixed{
+	position: fixed;
+	width: 5%;
 }
 .link{
 	text-decoration: none;
@@ -140,8 +145,6 @@ body{
 	padding: 5px 0;
 }
 .maps{
-	padding: 10px;
-	margin: auto;
 	width: 100%;
 	max-height: 50vh;
 }
@@ -151,6 +154,9 @@ body{
 	align-items: center;
 	justify-content: space-between;
 	margin: 50px;
+}
+.findus a{
+	grid-column: span 2;
 }
 .text a:hover{
 	color: blue;
@@ -164,6 +170,9 @@ body{
 }
 .overlay{
 	display: none;
+}
+.fixed{
+	position: fixed;
 }
 @media screen and (max-width: 600px){
 	.content3{
@@ -208,19 +217,27 @@ body{
 	}
 	.overlay{
 		overflow: hidden;
-  		display: inline-flex;
+  		display: flex;
   		width: 90%;
+  		justify-content: space-between;
+		align-items: center;
 	}
 	.overlay img{
-		width: 20%;
-		margin-left: 75%;
-		margin-top: auto;
+		width: 50px;
+		margin: 0 20px;
+		float: right;
+	}
+	.overlay h2{
+		width: 75%;
+		float: center;
 	}
 	.overlay #overlaycontent{
 		display: none;
 		position: absolute;
 		right: 0;
 		background-color: #7e685a;
+		width: 100%;
+		top: 80px;
 	}
 	.overlay a{
 		display: block;
@@ -229,6 +246,19 @@ body{
 		font-weight: bold;
 		font-size: 20px;
 		background-color: #7e685a;
-		padding: 5px;
+		padding: 10px;
+	}
+	.logga{
+		width: 15%;
+		position: relative;
+	}
+	.logga #fixed{
+		width: 100%;
+		position: relative;
+	}
+	nav{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
 	}
 }
