@@ -14,7 +14,7 @@
 			<div class="logga">
 				<a href="#"> <img src="logo.png" alt="Logo"> </a>
 			</div>
-			<!-- Navigation till alla sidor, nästan samma på alla sidor -->
+			<!-- Navigation till alla sidor, nästan samma på alla sidor, syns bara i datorläge -->
 			<div class="nav">
 				<ul>
 					<li> <a href="index.html" class="link"> Home</a> </li>
@@ -29,7 +29,7 @@
 				<div>
 					<h2> Apply</h2>
 				</div>
-				<div id="overlaycontent">
+				<div id="overlaycontent"> 
 					<a href="index.html"> Home</a>
 					<a href="about.html"> About</a>
 					<a href="curriculum.html"> Curriculum</a>
@@ -42,41 +42,41 @@
 			</div>
 		</nav>
 		<div class="box">
-			<form class="grid">
-				<label> Personnummer (ÅÅÅÅMMDD-XXXX)*</label>
+			<form class="grid"> <!-- Formuläret för att söka, inte särskilt snyggt eller komplicerat men det funkar (nästan)-->
+				<label for="persnr"> Personnummer (ÅÅÅÅMMDD-XXXX)*</label>
 				<input type="text" name="persnr" minlength="12" maxlength="13" required>
 				<br>
-				<label> Förnamn*</label>
+				<label for="fname"> Förnamn*</label>
 				<input type="text" name="fname" required>
 				<br>
-				<label> Efternamn*</label>
+				<label for="lname"> Efternamn*</label>
 				<input type="text" name="lname" required>
 				<br>
-				<label> c/o</label>
+				<label for="c/o"> c/o</label>
 				<input type="text" name="c/o">
 				<br>
 				<label> Adress*</label>
 				<input type="text" name="adress" required>
 				<br>
-				<label> Postnummer*</label>
+				<label for="postnr"> Postnummer*</label>
 				<input type="text" name="postnr" required size="5">
 				<br>
-				<label> Ort*</label>
+				<label for="ort"> Ort*</label>
 				<input type="text" name="ort" required>
 				<br>
-				<label> Telefon</label>
+				<label for="telefon"> Telefon</label>
 				<input type="tel" name="telefon">
 				<br>
-				<label> E-post</label>
+				<label for="epost"> E-post</label>
 				<input type="email" name="epost">
 				<br>
-				<label>Hur vill du bli kontaktad?*</label>
-				<label>Telefon </label>
-				<input type="radio" name="kontaktad" required>
-				<label style="margin-right: 0;">E-post</label>
-				<input type="radio" name="kontaktad" required>
-				<label class="right"> SMS</label>
-				<input type="radio" name="kontaktad" required>
+				<label for="kontaktad">Hur vill du bli kontaktad?*</label> <!-- Jag är medveten om att dessa knappar är buggade men vet inte vad som är fel då de inte vill identifiera sig rätt -->
+				<label for="kontaktad">Telefon </label>
+				<input type="radio" name="kontaktad" id="kontaktad" required>
+				<label for="kontaktad">E-post</label>
+				<input type="radio" name="kontaktad" id="kontaktad" required>
+				<label for="kontaktad"> SMS</label>
+				<input type="radio" name="kontaktad" id="kontaktad" required>
 				<br>
 				<label for="medbo"> Medborgarskap*</label>
 				<label>Svensk</label>

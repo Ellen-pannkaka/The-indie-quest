@@ -1,51 +1,42 @@
-nav{
-	padding: 10px 0;
+nav{ /* Det som definierar området som en navigations meny */
+	padding: 10px;
 	display: flex;
 	background-color: #7e685a;
 }
-.logga img{
+.logga img{ /* Loggan som syns på alla sidor */
 	width: 100%;
 }
 .logga{
 	width: 5%;
 }
 nav ul li {
-	display: inline-flex;
 	list-style: none;
 }
-nav {
-	padding: 10px;
-	margin: 0;
-	width: 100%;
-}
-/* Navigation meny for all websites */
 .nav{
 	width: 90%;
 }
-.nav ul{
+.nav ul{ /* Ordnar länkarna med jämt mellanrum i menyn på dator */
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 }
-.logga #fixed{
+.logga #fixed{ /* Loggan för Curriculum då den flyttas med när man skrollar på endast den sidan, ändrade id i stället för att skapa en ny klass */
 	position: fixed;
 	width: 5%;
 }
-.link{
+.link{ /* Länkarna i menyn till de olika sidorna */
 	text-decoration: none;
 	color: #fff; 
 	font-weight: bold;
 	font-size: 20px;
 }
-/* Different style for current website */
-.here{
+.here{ /* Annan stil för hemsidan användaren är på, svart text i stället för vit */
 	text-decoration: none;
 	color: #000; 
 	font-weight: bold;
 	font-size: 20px;
 }
-/* standarder för alla hemsidor */
-.hello{
+.hello{ /* standarder för alla hemsidor */
 	min-width: 100%;
 	background-color: #f0a8af;
 	min-height: 100vh;
@@ -53,13 +44,11 @@ nav {
 	box-sizing: border-box;
 
 }
-/*grid system för alla sidor delade på 3 */
-.content3{
+.content3{ /*grid system för alla sidor delade jämt på 3 */
 	display: grid;
 	grid-template-columns: 33% 34% 33%;
 }
-/* Different color in one square */
-.accent{
+.accent{ /* En ruta med annorlunda färg för att bli mer intressant */
 	background-color: #afd275;
 	padding: 10px;
 	align-items: center;
@@ -68,13 +57,12 @@ nav {
 .grid{
 	padding: 10px;
 }
-body{
+body{ /* Det som gäller för hela hemsidan, ser till att det inte finns en vit ram runt sidan */
 	overflow-x: hidden;
 	margin: 0;
 	font-family: "Montserrat";
 }
-/* grid system för alla sidor delade på 2 */
-.content2{
+.content2{ /* grid system för alla sidor delade jämt på 2 */
 	display: grid;
 	grid-template-columns: 50% 50%;
 	padding: 20px;
@@ -93,8 +81,7 @@ body{
 .span{
 	grid-column: span 2;
 }
-/* shows box with different color around certain elements */
-.box{
+.box{ /* Box med annan färg som ska överstryka viktig och sammanfattande information */
 	margin: 20px 20%;
 	background-color: #afd275;
 	padding: 20px;
@@ -102,13 +89,12 @@ body{
 .rows{
 	grid-row: span 2;
 }
-/* box with different color */
-.end{
+.end{ /* Sammanfattning av avsnitten i Curriculum med en annan stil */
 	background-color: #c5cdd3;
 	padding: 20px;
 	margin: 10px 0;
 }
-.art{
+.art{ /* Lägger bara olika element i mitten */
 	margin: auto;
 }
 .yt{
@@ -117,12 +103,11 @@ body{
 .span3{
 	grid-column: span 3;
 }
-/* navigation meny for curriculum site */
-.side{
+.side{ /* grid system för navigation i Curriculum delat 20/80 */
 	display: grid;
 	grid-template-columns: 20% 80%;
 }
-.navigation{
+.navigation{ /* Själva navigationen i Curriculum, fast på samma ställe hela tiden */
 	padding: 10px;
 	position: fixed;
 	max-width: 15%;
@@ -132,7 +117,7 @@ body{
 	text-decoration: none;
 	margin: 10px 0;
 }
-.navigation a:hover{
+.navigation a:hover{ /* Ändrar färg när muspekaren är över elementet */
 	color: #000;
 }
 .title{
@@ -147,11 +132,7 @@ body{
 	list-style: none;
 	padding: 5px 0;
 }
-.maps{
-	width: 100%;
-	max-height: 50vh;
-}
-.findus{
+.findus{ /* Kontaktinformationen i Find Us, fördelade jämt över sidan */
 	display: flex;
 	grid-column: span 2;
 	align-items: center;
@@ -161,24 +142,24 @@ body{
 .findus a{
 	grid-column: span 2;
 }
+.findus a:hover{
+	color: blue;
+}
 .text a:hover{
 	color: blue;
 }
-.grid label{
+.grid label{ 
 	margin: 5px 0 5px 10px;
 	padding: 20px 0;
 }
 .grid input{
 	margin: 5px;
 }
-.overlay{
+.overlay{ /* Navigationsmeny som bara syns i mobilläge, inte på datorn */
 	display: none;
 }
-.fixed{
-	position: fixed;
-}
-@media screen and (max-width: 600px){
-	.content3{
+@media screen and (max-width: 600px){ /* Allt som bara gäller när skärmen blir mindre, i mobilläge */
+	.content3{ /* I stället för grid delat på 3 finns det bara en ruta */
 		grid-template-columns: 100%;
 	}
 	.span3{
@@ -187,13 +168,13 @@ body{
 	.span{
 		grid-column: span 1;
 	}
-	.navigation{
+	.navigation{ /* Navigation för Curriculum finns inte i mobilläge, länkarna syns inte */
 		display: none;
 	}
-	.side{
+	.side{ /* Tar bort sidormenyn */
 		grid-template-columns: 100%;
 	}
-	.content2{
+	.content2{ /* I stället för grid delat på 2 finns det bara en ruta */
 		grid-template-columns: 100%;
 	}
 	.box{
@@ -215,17 +196,17 @@ body{
 		grid-column: span 1;
 		display: block;
 	}
-	.nav{
+	.nav{ /* Tar bort navigationsmeny mellan sidorna i mobilläge */
 		display: none;
 	}
-	.overlay{
+	.overlay{ /* Navigation som bara syns i mobilläge med titel */
 		overflow: hidden;
   		display: flex;
   		width: 90%;
   		justify-content: space-between;
 		align-items: center;
 	}
-	.overlay img{
+	.overlay img{ /* Navigationsknapp för mobilläge */
 		width: 50px;
 		margin: 0 20px;
 		float: right;
@@ -234,7 +215,7 @@ body{
 		width: 100%;
 		float: center;
 	}
-	.overlay #overlaycontent{
+	.overlay #overlaycontent{ /* Länkar för navigationsmenyn i mobilläge som bara syns när script aktiveras */
 		display: none;
 		position: absolute;
 		right: 0;
