@@ -100,6 +100,11 @@ body{ /* Det som gäller för hela hemsidan, ser till att det inte finns en vit 
 .yt{
 	padding: 10px;
 }
+.yt iframe{
+	width: 100%;
+	height: 200px;
+	border: none;
+}
 .span3{
 	grid-column: span 3;
 }
@@ -131,6 +136,11 @@ body{ /* Det som gäller för hela hemsidan, ser till att det inte finns en vit 
 .navigation ul li{
 	list-style: none;
 	padding: 5px 0;
+}
+.maps iframe{
+	width: 100%;
+	height: 300px;
+	border: none;
 }
 .findus{ /* Kontaktinformationen i Find Us, fördelade jämt över sidan */
 	display: flex;
@@ -213,7 +223,6 @@ body{ /* Det som gäller för hela hemsidan, ser till att det inte finns en vit 
 	}
 	.overlay h2{
 		width: 100%;
-		float: center;
 	}
 	.overlay #overlaycontent{ /* Länkar för navigationsmenyn i mobilläge som bara syns när script aktiveras */
 		display: none;

@@ -37,53 +37,53 @@
 					<a href="apply.html"> Apply</a>
 				</div>
 				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<img src="burger.png">
+					<img src="burger.png" alt="burger">
 				</a>
 			</div>
 		</nav>
 		<div class="box">
 			<form class="grid"> <!-- Formuläret för att söka, inte särskilt snyggt eller komplicerat men det funkar (nästan)-->
 				<label for="persnr"> Personnummer (ÅÅÅÅMMDD-XXXX)*</label>
-				<input type="text" name="persnr" minlength="12" maxlength="13" required>
+				<input type="text" id="persnr" minlength="12" maxlength="13" required>
 				<br>
 				<label for="fname"> Förnamn*</label>
-				<input type="text" name="fname" required>
+				<input type="text" id="fname" required>
 				<br>
 				<label for="lname"> Efternamn*</label>
-				<input type="text" name="lname" required>
+				<input type="text" id="lname" required>
 				<br>
 				<label for="c/o"> c/o</label>
-				<input type="text" name="c/o">
+				<input type="text" id="c/o">
 				<br>
 				<label> Adress*</label>
-				<input type="text" name="adress" required>
+				<input type="text" id="adress" required>
 				<br>
 				<label for="postnr"> Postnummer*</label>
-				<input type="text" name="postnr" required size="5">
+				<input type="text" id="postnr" required size="5">
 				<br>
 				<label for="ort"> Ort*</label>
-				<input type="text" name="ort" required>
+				<input type="text" id="ort" required>
 				<br>
 				<label for="telefon"> Telefon</label>
-				<input type="tel" name="telefon">
+				<input type="tel" id="telefon">
 				<br>
 				<label for="epost"> E-post</label>
-				<input type="email" name="epost">
+				<input type="email" id="epost">
 				<br>
-				<label for="kontaktad">Hur vill du bli kontaktad?*</label> <!-- Jag är medveten om att dessa knappar är buggade men vet inte vad som är fel då de inte vill identifiera sig rätt -->
-				<label for="kontaktad">Telefon </label>
-				<input type="radio" name="kontaktad" id="kontaktad" required>
-				<label for="kontaktad">E-post</label>
-				<input type="radio" name="kontaktad" id="kontaktad" required>
-				<label for="kontaktad"> SMS</label>
-				<input type="radio" name="kontaktad" id="kontaktad" required>
+				<label>Hur vill du bli kontaktad?*</label> <!-- Jag är medveten om att dessa knappar är buggade men vet inte vad som är fel då de inte vill identifiera sig rätt -->
+				<label for="tele">Telefon</label>
+				<input type="radio" name="kontaktad" id="tele" required>
+				<label for="post">E-post</label>
+				<input type="radio" name="kontaktad" id="post" required>
+				<label for="sms">SMS</label>
+				<input type="radio" name="kontaktad" id="sms" required>
 				<br>
-				<label for="medbo"> Medborgarskap*</label>
-				<label>Svensk</label>
-				<input type="radio" name="medbo" id="medbo" required>
-				<label>Annat, ange land</label>
-				<input type="radio" name="medbo" id="medbo" required>
-				<input type="text" name="medbo" id="medbo">
+				<label> Medborgarskap*</label>
+				<label for="svensk">Svensk</label>
+				<input type="radio" name="medbo" id="svensk" required>
+				<label for="annat">Annat, ange land</label>
+				<input type="radio" name="medbo" id="annat" required>
+				<input type="text" name="medbo">
 				<br>
 				<input type="submit" value="Submit">
 			</form>
